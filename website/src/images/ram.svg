@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- RAM body -->
+  <path d="M200 300c55.228 0 100-44.772 100-100S255.228 100 200 100s-100 44.772-100 100 44.772 100 100 100z" fill="#4ADE80"/>
+  
+  <!-- RAM horns -->
+  <path d="M160 150c0 0-30-40-40-20s20 40 40 40M240 150c0 0 30-40 40-20s-20 40-40 40" fill="#34D399"/>
+  
+  <!-- RAM face -->
+  <circle cx="180" cy="180" r="8" fill="#1F2937"/>
+  <circle cx="220" cy="180" r="8" fill="#1F2937"/>
+  <path d="M190 210c6.667 6.667 13.333 6.667 20 0" stroke="#1F2937" stroke-width="4" stroke-linecap="round"/>
+  
+  <!-- Memory chip design -->
+  <rect x="160" y="240" width="80" height="30" rx="4" fill="#34D399"/>
+  <rect x="170" y="250" width="10" height="10" fill="#1F2937"/>
+  <rect x="190" y="250" width="10" height="10" fill="#1F2937"/>
+  <rect x="210" y="250" width="10" height="10" fill="#1F2937"/>
+  <rect x="220" y="250" width="10" height="10" fill="#1F2937"/>
+</svg> 

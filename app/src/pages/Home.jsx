@@ -10,6 +10,7 @@ const Home = () => {
       <section className="hero">
         <div className="hero-content">
           <h1>Hi, I'm Amandip Dutta!</h1>
+          <a href="mailto:amandip@berkeley.edu" className="email-link">amandip@berkeley.edu</a>
           <div className="bio">
             <p>
               I'm an undergraduate student at the University of California,

@@ -46,17 +46,52 @@ body {
   color: var(--text-secondary-dark);
   text-decoration: none;
   font-size: 1rem;
-  transition: color 0.2s ease;
+  transition: all 0.4s ease;
+  position: relative;
+}
+
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -4px;
+  left: 0;
+  background-color: var(--accent-color);
+  transition: width 0.4s ease;
 }
 
 .nav-links a:hover {
   color: var(--text-primary-dark);
 }
 
+.nav-links a:hover::after {
+  width: 100%;
+}
+
 .nav-icons {
   display: flex;
-  align-items: center;
   gap: 1rem;
+  align-items: center;
+}
+
+.nav-icon-link {
+  color: var(--text-secondary-dark);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+  line-height: 0;
+}
+
+.nav-icon-link:hover {
+  color: var(--accent-color);
+}
+
+.nav-icon {
+  fill: currentColor;
+  width: 24px;
+  height: 24px;
 }
 
 .theme-toggle {
@@ -83,10 +118,25 @@ body {
 
 .github-link:hover,
 .linkedin-link:hover {
-  color: var(--text-primary-dark);
+  color: var(--accent-color);
 }
 
-.github-icon,
+.github-link svg,
+.linkedin-link svg {
+  fill: currentColor;
+}
+
+.linkedin-link {
+  color: var(--text-secondary-dark);
+  transition: color 0.3s ease;
+  display: flex;
+  align-items: center;
+}
+
+.linkedin-link:hover {
+  color: var(--accent-color);
+}
+
 .linkedin-icon {
   fill: currentColor;
 }
@@ -105,4 +155,14 @@ main {
   background-color: #1e1e1e; /* Slightly lighter dark background for contrast */
   border-radius: 10px; /* Optional: Add rounded corners */
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Optional: Add shadow for depth */
+}
+
+/* Remove old icon styles */
+.linkedin-link,
+.github-link,
+.mail-link,
+.linkedin-icon,
+.github-icon,
+.mail-icon {
+  display: none;
 }

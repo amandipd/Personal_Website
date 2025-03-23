@@ -24,8 +24,8 @@ const experiences = [
   {
     company: 'Rentora',
     position: 'Software Engineer Intern',
-    duration: 'May 2020 - Aug 2020',
-    location: 'Seattle, WA',
+    duration: 'May 2024 - Aug 2024',
+    location: 'Santa Cruz, CA',
     logoUrl: rentoraLogo
   }
 ];
@@ -33,7 +33,7 @@ const experiences = [
 const Experience = () => {
   return (
     <section className="experience-section">
-      <h2>Experience</h2>
+      <h2>Professional Experience</h2>
       <div className="timeline">
         {experiences.map((exp, index) => (
           <div key={index} className="timeline-item">

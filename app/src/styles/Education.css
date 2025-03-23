@@ -1,0 +1,306 @@
+.education-container {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.education-container h1 {
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.education-container h2 {
+  margin-bottom: 2rem;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #444;
+}
+
+/* Courses Section */
+.courses-section {
+  margin-top: 5rem;
+  margin-bottom: 4rem;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+}
+
+.course-category {
+  background: #fff;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e0e0e0;
+}
+
+.course-category h3 {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.course-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.course-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem;
+  background: #f8f9fa;
+  border-radius: 6px;
+  border: 1px solid transparent;
+}
+
+.course-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.course-code {
+  font-weight: 500;
+  color: #333;
+}
+
+.course-name {
+  font-size: 0.9rem;
+  color: #1a73e8;
+}
+
+/* Educational Experience Section */
+.education-experience {
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.education-timeline {
+  position: relative;
+  padding-left: 2rem;
+  width: 100%;
+}
+
+.education-timeline::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #e0e0e0;
+}
+
+.education-card {
+  position: relative;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #e0e0e0;
+  width: calc(100% - 2rem);
+}
+
+.education-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.education-card::before {
+  content: '';
+  position: absolute;
+  left: -2.4rem;
+  top: 2rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  background: #fff;
+  border: 2px solid #e0e0e0;
+}
+
+.education-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.education-header h3 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin: 0;
+  color: #333;
+}
+
+.duration {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.education-details {
+  color: #444;
+  width: 100%;
+}
+
+.degree {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.location, .gpa {
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  margin-top: 1rem;
+  line-height: 1.6;
+}
+
+/* Educational Experiences */
+.edu-experiences {
+  margin-top: 2rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e0e0e0;
+  width: 100%;
+}
+
+.edu-exp-item {
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.edu-exp-item:last-child {
+  margin-bottom: 0;
+}
+
+.edu-exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+.edu-exp-title {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.edu-exp-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+.edu-exp-info h4 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #333;
+  margin: 0;
+}
+
+.company-link {
+  color: #1a73e8;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.company-link:hover {
+  color: #1557b0;
+  text-decoration: underline;
+}
+
+.edu-exp-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.2rem;
+}
+
+.edu-exp-meta .location {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.edu-exp-description {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+  margin-top: 0.5rem;
+}
+
+/* Dark mode support */
+.dark .education-card,
+.dark .course-category {
+  background: #1a1a1a;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  border-color: #2a2a2a;
+}
+
+.dark .course-item {
+  background: #2a2a2a;
+  border-color: #333;
+}
+
+.dark .education-timeline::before {
+  background: #333;
+}
+
+.dark .education-card::before {
+  background: #1a1a1a;
+  border-color: #333;
+}
+
+.dark h1,
+.dark h2,
+.dark h3,
+.dark h4,
+.dark .degree,
+.dark .course-code {
+  color: #fff;
+}
+
+.dark .location,
+.dark .gpa,
+.dark .course-name,
+.dark .edu-exp-description,
+.dark .edu-exp-meta .location {
+  color: #8ab4f8;
+}
+
+.dark .description {
+  color: #ccc;
+}
+
+.dark .course-category h3 {
+  border-color: #2a2a2a;
+}
+
+.dark .edu-experiences {
+  border-color: #2a2a2a;
+}
+
+.dark .company-link {
+  color: #8ab4f8;
+}
+
+.dark .company-link:hover {
+  color: #aecbfa;
+} 

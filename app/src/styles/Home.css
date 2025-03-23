@@ -26,6 +26,20 @@
   line-height: 1.2;
 }
 
+.email-link {
+  display: block;
+  color: var(--accent-color);
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.email-link:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
 .bio {
   color: var(--text-secondary-dark);
   margin-bottom: 2rem;

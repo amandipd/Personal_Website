@@ -1,33 +1,33 @@
-import React from 'react';
-import '../styles/Experience.css';
-import surebetLogo from '../company-logos/surebet.png';
-import collegiateLogo from '../company-logos/collegiate.jpeg';
-import rentoraLogo from '../company-logos/rentora.jpeg';
+import React from "react";
+import "../styles/Experience.css";
+import surebetLogo from "../company-logos/surebet.png";
+import collegiateLogo from "../company-logos/collegiate.jpeg";
+import rentoraLogo from "../company-logos/rentora.jpeg";
 
 const experiences = [
   {
-    company: 'Surebet Jobs',
-    companyUrl: 'https://surebetjobs.com/',
-    position: 'Backend Engineer',
-    duration: 'Jan 2025 - Present',
-    location: 'Berkeley, CA',
-    logoUrl: surebetLogo
+    company: "Surebet Jobs",
+    companyUrl: "https://surebetjobs.com/",
+    position: "Backend Software Engineer Intern",
+    duration: "Jan 2025 - Present",
+    location: "Berkeley, CA",
+    logoUrl: surebetLogo,
   },
   {
-    company: 'Collegiate Consulting',
-    companyUrl: 'https://www.collegiate-consulting.com/',
-    position: 'Data Engineer',
-    duration: 'Jun 2024 - Dec 2024',
-    location: 'San Francisco, CA',
-    logoUrl: collegiateLogo
+    company: "Collegiate Consulting",
+    companyUrl: "https://www.collegiate-consulting.com/",
+    position: "Data Engineer",
+    duration: "Jun 2024 - Dec 2024",
+    location: "San Francisco, CA",
+    logoUrl: collegiateLogo,
   },
   {
-    company: 'Rentora',
-    position: 'Software Engineer Intern',
-    duration: 'May 2024 - Aug 2024',
-    location: 'Santa Cruz, CA',
-    logoUrl: rentoraLogo
-  }
+    company: "Rentora",
+    position: "Full-Stack Software Engineer Intern",
+    duration: "May 2024 - Aug 2024",
+    location: "Santa Cruz, CA",
+    logoUrl: rentoraLogo,
+  },
 ];
 
 const Experience = () => {
@@ -44,9 +44,9 @@ const Experience = () => {
                 </div>
                 <div className="company-info">
                   <h3>{exp.position}</h3>
-                  <a 
-                    href={exp.companyUrl} 
-                    target="_blank" 
+                  <a
+                    href={exp.companyUrl}
+                    target="_blank"
                     rel="noopener noreferrer"
                     className="company-link"
                   >
@@ -66,4 +66,4 @@ const Experience = () => {
   );
 };
 
-export default Experience; 
+export default Experience;

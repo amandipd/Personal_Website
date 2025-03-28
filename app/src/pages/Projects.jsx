@@ -51,11 +51,20 @@ const Projects = () => {
 
     {
       title: "Flight Route Navigator",
-      description: "implemented a flight route planning program in Java, leveraging Dijkstra's Algorithm to minimize travel distances between airports. It efficiently handles datasets of 19,000+ airports and 40,000+ flight connections using graph traversal techniques.",
+      description: "A flight route planning program in Java that leverages Dijkstra's Algorithm to minimize travel distances between airports. It efficiently handles datasets of 19,000+ airports and 40,000+ flight connections using graph traversal techniques.",
       tags: ["Other"],
       githubUrl: "https://github.com/amandipd/Flight-Route-Navigator",
       languages: ["Java"],
       timeframe: "Apr 2024 - May 2024"
+    },
+
+    {
+      title: "Distributed Log Aggregator",
+      description: "This distributed log aggregation service offers a Flask-based microservice for centralized log management across multiple services. It provides RESTful POST and GET endpoints for logging service events, allowing developers to add log entries and retrieve logs within a specified time window. The system maintains a sliding time window of logs, automatically archiving entries that exceed the one-hour retention period.",
+      tags: ["Backend"],
+      githubUrl: "https://github.com/amandipd/Distributed-Log-Aggregate",
+      languages: ["Python", "Flask"],
+      timeframe: "March 2025 - Present"
     },
     
   ];
@@ -70,9 +79,25 @@ const Projects = () => {
 
   const filteredProjects = projects
     .sort((a, b) => {
-      // Extract end dates (after the "-" in timeframe)
-      const aEndDate = new Date(a.timeframe.split("-")[1].trim());
-      const bEndDate = new Date(b.timeframe.split("-")[1].trim());
+      // First sort by present status
+      const aIsPresent = a.timeframe.includes("Present");
+      const bIsPresent = b.timeframe.includes("Present");
+      if (aIsPresent !== bIsPresent) {
+        return bIsPresent - aIsPresent;
+      }
+
+      // Then sort by date
+      const aTimeframe = a.timeframe.trim();
+      const bTimeframe = b.timeframe.trim();
+      
+      // Handle both single month and date range formats
+      const aEndDate = aTimeframe.includes("-") 
+        ? new Date(aTimeframe.split("-")[1].trim())
+        : new Date(aTimeframe);
+      const bEndDate = bTimeframe.includes("-")
+        ? new Date(bTimeframe.split("-")[1].trim())
+        : new Date(bTimeframe);
+      
       // Sort in descending order (most recent first)
       return bEndDate - aEndDate;
     })

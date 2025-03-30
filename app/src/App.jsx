@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import { Analytics } from "@vercel/analytics/react";
 import "./styles/App.css";
 import Notes from "./pages/Notes";
 import Articles from "./pages/Articles";
@@ -66,7 +65,6 @@ function App() {
           </Routes>
         </main>
       </div>
-      <Analytics />
     </Router>
   );
 }

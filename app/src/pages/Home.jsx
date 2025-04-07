@@ -10,17 +10,23 @@ const Home = () => {
       <section className="hero">
         <div className="hero-content">
           <h1>Hi, I'm Amandip Dutta!</h1>
-          <a href="mailto:amandip@berkeley.edu" className="email-link">amandip@berkeley.edu</a>
+          <a href="mailto:amandip@berkeley.edu" className="email-link">
+            amandip@berkeley.edu
+          </a>
           <div className="bio">
             <p>
               I'm an undergraduate student at the University of California,
-              Berkeley studying Computer Science and Statistics. My career interests lie in{' '}
-              <span className="highlight">backend development</span>,{' '}
-              <span className="highlight">ML/AI</span>, and{' '}
-              <span className="highlight">probabilistic risk assessment</span>, and I'm excited to explore these interests through upcoming coursework, projects, and work experiences.
+              Berkeley studying Computer Science. My career interests lie in{" "}
+              <span className="highlight">backend development</span>,{" "}
+              <span className="highlight">ML/AI</span>, and{" "}
+              <span className="highlight">probabilistic risk assessment</span>,
+              and I'm excited to explore these interests through upcoming
+              coursework, projects, and work experiences.
             </p>
             <p>
-              Outside of academics, I enjoy weight-lifting, gardening, and going out for hikes in the bay area. Feel free to explore my website to learn more about my professional experiences and projects!
+              Outside of academics, I enjoy weight-lifting, gardening, and going
+              out for hikes in the bay area. Feel free to explore my website to
+              learn more about my professional experiences and projects!
             </p>
           </div>
         </div>

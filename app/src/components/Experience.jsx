@@ -6,7 +6,7 @@ import rentoraLogo from "../company-logos/rentora.jpeg";
 
 const experiences = [
   {
-    company: "Surebet Jobs",
+    company: "Surebet Jobs | Part-Time",
     companyUrl: "https://surebetjobs.com/",
     position: "Backend Software Engineer Intern",
     duration: "Jan 2025 - Present",
@@ -14,7 +14,7 @@ const experiences = [
     logoUrl: surebetLogo,
   },
   {
-    company: "Collegiate Consulting",
+    company: "Collegiate Consulting | Part-Time",
     companyUrl: "https://www.collegiate-consulting.com/",
     position: "Data Engineer",
     duration: "Jun 2024 - Dec 2024",

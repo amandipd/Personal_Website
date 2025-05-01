@@ -40,6 +40,25 @@ const Projects = () => {
     },
 
     {
+      title: "Genre Classifier: Movie Screenplay Genre Predictor",
+      description:
+        "An end-to-end machine learning pipeline that classifies movie genres based on screenplay dialogue data. " +
+        "Using natural language processing techniques, the project vectorizes screenplays and trains a logistic regression model " +
+        "to distinguish between action, comedy, and drama genres.",
+      tags: ["AI/ML", "Course Project"],
+      languages: ["Python"],
+      timeframe: "Apr 2025"
+    },
+
+    {
+      title: "2048",
+      description: "A strategic puzzle game where players combine numbered tiles on a grid to reach the elusive 2048 tile. The implementation focuses on core mechanics like tile movement, merging, and board tilting in all four directions, using modular design and efficient algorithms.",
+      tags: ["Course Project"],
+      languages: ["Java"],
+      timeframe: "Jan 2024 - Feb 2024"
+    },
+
+    {
       title: "UK House Prices and Salary Data Visualization",
       description: "This project visualizes UK median salaries and average house prices between 2000 and 2020 through interactive charts. It includes an area chart for house price trends and a comparison of male and female salaries.",
       tags: ["Frontend"],
@@ -64,7 +83,7 @@ const Projects = () => {
       tags: ["Backend"],
       githubUrl: "https://github.com/amandipd/Distributed-Log-Aggregate",
       languages: ["Python", "Flask"],
-      timeframe: "March 2025 - Present"
+      timeframe: "Mar 2025"
     },
     
   ];

@@ -46,7 +46,16 @@ const Projects = () => {
         "Using natural language processing techniques, the project vectorizes screenplays and trains a logistic regression model " +
         "to distinguish between action, comedy, and drama genres.",
       tags: ["AI/ML", "Course Project"],
-      languages: ["Python"],
+      languages: ["Python", "NumPy"],
+      timeframe: "Apr 2025"
+    },
+
+    {
+      title: "AI Finance Tracking Assistant",
+      description:
+        "Developed a dynamic finance tracker that enables real-time transaction management with category-based filtering and seamless data retrieval. Designed and integrated an AI-powered chatbot to offer personalized financial insights and advice through secure RESTful APIs.",
+      tags: ["Backend", "AI/ML", "Frontend"],
+      languages: ["React.js", "Node.js", "Express.js", "OpenAI API", "MongoDB", "CSS"],
       timeframe: "Apr 2025"
     },
 

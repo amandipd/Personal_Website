@@ -1,10 +1,18 @@
 import React from "react";
 import "../styles/Experience.css";
 import surebetLogo from "../company-logos/surebet.png";
-import collegiateLogo from "../company-logos/collegiate.jpeg";
-import rentoraLogo from "../company-logos/rentora.jpeg";
+import cvsLogo from "../company-logos/cvs.png";
 
 const experiences = [
+  {
+    company: "CVS Health",
+    companyUrl: "http://cvshealth.com/",
+    position: "Software Engineer Intern",
+    duration: "May 2025 - Present",
+    location: "Scottsdale, AZ",
+    logoUrl: cvsLogo,
+  },
+
   {
     company: "Surebet Jobs | Part-Time",
     companyUrl: "https://surebetjobs.com/",
@@ -12,21 +20,6 @@ const experiences = [
     duration: "Jan 2025 - Present",
     location: "Berkeley, CA",
     logoUrl: surebetLogo,
-  },
-  {
-    company: "Collegiate Consulting | Part-Time",
-    companyUrl: "https://www.collegiate-consulting.com/",
-    position: "Data Engineer",
-    duration: "Jun 2024 - Dec 2024",
-    location: "San Francisco, CA",
-    logoUrl: collegiateLogo,
-  },
-  {
-    company: "Rentora",
-    position: "Full-Stack Software Engineer Intern",
-    duration: "May 2024 - Aug 2024",
-    location: "Santa Cruz, CA",
-    logoUrl: rentoraLogo,
   },
 ];
 

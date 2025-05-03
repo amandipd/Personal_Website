@@ -4,6 +4,7 @@ import surebetLogo from "../company-logos/surebet.png";
 import cvsLogo from "../company-logos/cvs.png";
 
 const experiences = [
+  /*
   {
     company: "CVS Health",
     companyUrl: "http://cvshealth.com/",
@@ -11,7 +12,7 @@ const experiences = [
     duration: "May 2025 - Present",
     location: "Scottsdale, AZ",
     logoUrl: cvsLogo,
-  },
+  },*/
 
   {
     company: "Surebet Jobs | Part-Time",

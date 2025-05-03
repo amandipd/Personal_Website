@@ -32,14 +32,6 @@ const Projects = () => {
     },
 
     {
-      title: "2048",
-      description: "A strategic puzzle game where players combine numbered tiles on a grid to reach the elusive 2048 tile. The implementation focuses on core mechanics like tile movement, merging, and board tilting in all four directions, using modular design and efficient algorithms.",
-      tags: ["Course Project"],
-      languages: ["Java"],
-      timeframe: "Jan 2024 - Feb 2024"
-    },
-
-    {
       title: "Genre Classifier: Movie Screenplay Genre Predictor",
       description:
         "An end-to-end machine learning pipeline that classifies movie genres based on screenplay dialogue data. " +

@@ -6,13 +6,11 @@ import Articles from "./pages/Articles";
 import Projects from "./pages/Projects";
 import Home from "./pages/Home";
 import Education from "./pages/Education";
-import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(true);
 
   return (
-    <>
     <Router>
       <div className={`app ${isDarkMode ? "dark" : "light"}`}>
         <nav className="navbar">
@@ -68,9 +66,6 @@ function App() {
         </main>
       </div>
     </Router>
-    <Analytics />
-    </>
-    
   );
 }
 

@@ -47,6 +47,7 @@ const Projects = () => {
       description:
         "Developed a dynamic finance tracker that enables real-time transaction management with category-based filtering and seamless data retrieval. Designed and integrated an AI-powered chatbot to offer personalized financial insights and advice through secure RESTful APIs.",
       tags: ["Backend", "AI/ML", "Frontend"],
+      githubUrl: "https://github.com/amandipd/AI-Finance-Tracking-Assistant",
       languages: ["React.js", "Node.js", "Express.js", "OpenAI API", "MongoDB", "CSS"],
       timeframe: "Apr 2025"
     },

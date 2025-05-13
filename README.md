@@ -1,3 +1,3 @@
 My personal website
 
-[amandip.vercel.app](amandip.vercel.app)
+[amandip.vercel.app](https://amandip.vercel.app/)
